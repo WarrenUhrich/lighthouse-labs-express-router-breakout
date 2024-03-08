@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our Single Page App</title>
+
+        <!-- Vendor Scripts! -->
+        <script src="/vendor/jquery-3.7.1.min.js"></script>
+
+        <!-- Our Scripts! -->
+        <script defer src="/scripts/app.js"></script>
+    </head>
+    <body>
+        <h1>Our Single Page App</h1>
+
+        <form id="add-user-form" method="POST" action="/api/users/">
+            <label>
+                Username:
+                <input id="add-user-form-username" type="text">
+            </label>
+            <br>
+            <label>
+                E-Mail:
+                <input id="add-user-form-email" type="text">
+            </label>
+            <br>
+            <label>
+                Password:
+                <input id="add-user-form-password" type="password">
+            </label>
+            <br>
+            <label>
+                School:
+                <input id="add-user-form-school" type="text">
+            </label>
+            <br>
+            <input type="submit" value="Add User">
+        </form>
+
+        <button id="show-user-button">
+            Show Users
+        </button>
+    </body>
+</html>
